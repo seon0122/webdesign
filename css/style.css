@@ -1,0 +1,133 @@
+@charset "utf-8"; /* css charset 설정 */
+* {
+    /* 공통리셋정보 */
+    box-sizing: border-box;
+    margin:0; padding:0;
+    list-style: none;
+    text-decoration:none;
+    font-size:16px;
+    /* 웹디실기 요구사항 컬러가이드값 */
+    color:#333;
+    /* background:#fff; */
+}
+body,html {background: #fff;}
+.popup {
+    background: #fff;
+    position: fixed;
+    left:50%;
+    top:50%;
+    width: 500px;
+    height: 400px;
+    transform: translate(-50%, -50%); /* 중심축변경 */
+    border: 1px solid #000; /* 경계구분용 */
+    padding:30px;
+    z-index: 999;
+    display: none;
+}
+.popup h1 {font-size:20px;}
+.popup p {line-height: 2;}
+.popup a {
+    position: absolute;
+    right: 30px;
+    bottom: 30px; /* 팝업 padding:30px라 비슷하게 */
+    background: #ff0048;
+    color: #fff;
+    padding: 10px;
+}
+header {
+    width: 1200px;
+    height: 100px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+header nav {margin-right: 20px;}
+header nav > ul {display: flex;}
+header nav > ul > li {position: relative;}
+header nav > ul > li > a {
+    display: block;
+    width: 150px;
+    line-height: 40px; /* 로고와 맞추기 위해 */
+    background: #fff;
+    text-align: center;
+}
+header nav > ul > li > a:hover {
+    background: #ff0048;
+    color: #fff;
+}
+header nav > ul > li > .sub {
+    background:#fff;
+    position: absolute;
+    width: 100%; /* absolute사용 시 너비필수 */
+    z-index: 900;
+}
+header nav > ul > li > .sub li {}
+header nav > ul > li > .sub li a {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+header nav > ul > li > .sub li a:hover {
+    background: #ff0048;
+    color: #fff;
+}
+main {
+    width: 1200px;
+    margin: 0 auto;
+}
+main .slide {
+    width: 1200px;
+    height: 300px;
+    overflow: hidden; /* 300높이 안에 숨기기 */
+}
+main .slide .slide_contents {}
+main .slide .slide_contents .slide1 {}
+main .slide .slide_contents .slide1 img {}
+main .slide .slide_contents .slide2 {}
+main .slide .slide_contents .slide2 img {}
+main .slide .slide_contents .slide3 {}
+main .slide .slide_contents .slide3 img {}
+main .c {display: flex;}
+main .c > * {
+    width: 400px;
+    height: 200px;
+}
+main .c .c12 {}
+main .c .c12 .title {}
+main .c .c12 .title a {}
+main .c .c12 .title .active {
+    background-color: #ff0048;
+    color: #fff;
+}
+main .c .c12 .contents {}
+main .c .c12 .contents .c1 {}
+main .c .c12 .contents .c1 a {
+    display: block;
+    /* 너비100%이기 때문에 flex따로 안써도 됨 */
+} 
+main .c .c12 .contents .c2 {
+    display: flex;
+    justify-content: space-around;
+}
+main .c .c12 .contents .c2 a {width: 30%;}
+main .c .c12 .contents .c2 a img {width: 100%;}
+main .c .c3 {}
+main .c .c3 img {}
+main .c .c4 {}
+main .c .c4 img {}
+footer {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p {}
+footer p:nth-child(2) {width: 750px;}
+footer p a {}
+footer p a img {filter: grayscale(100%);}
