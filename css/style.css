@@ -83,14 +83,18 @@ main .slide {
     width: 1200px;
     height: 300px;
     overflow: hidden; /* 300높이 안에 숨기기 */
+    /* overflow-x: hidden; 확인하기위해 임시 변경
+    overflow-y: auto; */
 }
-main .slide .slide_contents {}
+main .slide .slide_contents {transition: all 0.5s;}
 main .slide .slide_contents .slide1 {}
-main .slide .slide_contents .slide1 img {}
 main .slide .slide_contents .slide2 {}
-main .slide .slide_contents .slide2 img {}
 main .slide .slide_contents .slide3 {}
+main .slide .slide_contents .slide1 img {}
+main .slide .slide_contents .slide2 img {}
 main .slide .slide_contents .slide3 img {}
+main .slide .slide_contents div,
+main .slide .slide_contents div img {line-height: 0;} /* 이미지 사이 여백 0 */
 main .c {display: flex;}
 main .c > * {
     width: 400px;
